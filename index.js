@@ -20,7 +20,7 @@ app.post("/api/webhook", (req, res) => {
     res.sendStatus(200)
 })
 
-const PORT = 3003
+const PORT = process.env.port || 3003
 
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
