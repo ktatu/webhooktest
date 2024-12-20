@@ -11,8 +11,9 @@ app.get("/", (req, res) => {
 app.post("/api/webhook", (req, res) => {
     try {
         const webhookData = req.body
-        console.log("Webhook data ---------")
-        console.log(webhookData)
+        //console.log("Webhook data ---------")
+        //console.log(webhookData)
+        console.log(req)
     } catch (error) {
         console.log("Error when trying to print webhook endpoint data")
     }
